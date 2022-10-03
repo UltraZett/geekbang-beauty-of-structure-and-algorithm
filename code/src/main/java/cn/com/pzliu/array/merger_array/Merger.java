@@ -21,7 +21,6 @@ public class Merger<T extends Comparable> {
                 result[index++] = array2[array2Index++];
                 continue;
             }
-
             if (array2Index == array2.length){
                 result[index++] = array1[array1Index++];
                 continue;

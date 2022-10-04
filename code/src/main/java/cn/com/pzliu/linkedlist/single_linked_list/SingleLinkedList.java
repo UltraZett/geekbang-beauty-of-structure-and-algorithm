@@ -23,6 +23,7 @@ public class SingleLinkedList<T> implements ILinkedList {
     public void add(ListNode node) {
         tail.next = node;
         tail = tail.next;
+        length++;
     }
 
     public void insert(ListNode preNode, ListNode insertNode) {
@@ -37,6 +38,7 @@ public class SingleLinkedList<T> implements ILinkedList {
                 if (tail.next != null){
                     tail = tail.next;
                 }
+                length++;
                 return;
             }else {
                 p = p.next;
@@ -57,6 +59,7 @@ public class SingleLinkedList<T> implements ILinkedList {
                     //不是最后一个节点
                     p.next = p.next.next;
                 }
+                length--;
                 return;
             } else {
                 p = p.next;

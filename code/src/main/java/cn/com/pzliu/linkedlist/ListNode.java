@@ -7,6 +7,7 @@ public class ListNode <T>{
 
     public ListNode<T> next;
 
+    public ListNode<T> pre;
 
     public ListNode() {
     }
@@ -15,12 +16,10 @@ public class ListNode <T>{
         this.value = value;
     }
 
-
     @Override
     public String toString() {
         return "ListNode{" +
                 "value=" + value +
-                ", next=" + next +
                 '}';
     }
 }

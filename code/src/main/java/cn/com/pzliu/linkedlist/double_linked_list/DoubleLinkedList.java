@@ -3,7 +3,7 @@ package cn.com.pzliu.linkedlist.double_linked_list;
 import cn.com.pzliu.linkedlist.ILinkedList;
 import cn.com.pzliu.linkedlist.ListNode;
 
-public class DoubleLinkedList<T> implements ILinkedList {
+public class DoubleLinkedList<T extends Comparable> implements ILinkedList {
 
     private ListNode<T> head;
 

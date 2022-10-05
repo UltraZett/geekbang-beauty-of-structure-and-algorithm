@@ -1,7 +1,9 @@
 package cn.com.pzliu.linkedlist;
 
 
-public class ListNode <T>{
+import java.util.Comparator;
+
+public class ListNode <T extends Comparable> {
 
     public T value;
 
@@ -16,10 +18,18 @@ public class ListNode <T>{
         this.value = value;
     }
 
+
+    public ListNode setNext(ListNode<T> next) {
+        this.next = next;
+        return next;
+    }
+
     @Override
     public String toString() {
         return "ListNode{" +
                 "value=" + value +
+                ", next=" + next +
+                ", pre=" + pre +
                 '}';
     }
 }

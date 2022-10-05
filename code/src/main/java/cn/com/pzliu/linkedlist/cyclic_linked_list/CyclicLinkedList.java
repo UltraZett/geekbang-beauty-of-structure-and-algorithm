@@ -3,7 +3,7 @@ package cn.com.pzliu.linkedlist.cyclic_linked_list;
 import cn.com.pzliu.linkedlist.ILinkedList;
 import cn.com.pzliu.linkedlist.ListNode;
 
-public class CyclicLinkedList<T> implements ILinkedList {
+public class CyclicLinkedList<T extends Comparable> implements ILinkedList {
 
     private ListNode<T> head;
 

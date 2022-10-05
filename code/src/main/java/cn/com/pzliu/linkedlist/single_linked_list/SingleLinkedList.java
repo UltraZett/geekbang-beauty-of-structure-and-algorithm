@@ -8,7 +8,7 @@ import cn.com.pzliu.linkedlist.ListNode;
  *
  * @param <T>
  */
-public class SingleLinkedList<T> implements ILinkedList {
+public class SingleLinkedList<T extends Comparable> implements ILinkedList {
 
     private ListNode<T> head = new ListNode<T>();
 

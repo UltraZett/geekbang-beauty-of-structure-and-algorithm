@@ -28,8 +28,6 @@ public class ListNode <T extends Comparable> {
     public String toString() {
         return "ListNode{" +
                 "value=" + value +
-                ", next=" + next +
-                ", pre=" + pre +
                 '}';
     }
 }

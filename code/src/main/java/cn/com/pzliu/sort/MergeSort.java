@@ -6,6 +6,7 @@ import java.util.Arrays;
  * 归并排序
  * 分割
  * 合并
+ * 空间复杂度o（n）
  */
 public class MergeSort {
 
